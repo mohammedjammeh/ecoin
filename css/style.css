@@ -1,0 +1,711 @@
+/*************************
+		GENERAL 
+*************************/
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: #0a415c;
+	font-family: 'Droid Serif', serif;
+	padding: 0% 5%;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+/*************************
+		HEADER 
+*************************/
+header {
+	text-align: center;
+}
+
+header h1 {
+	font-weight: lighter;
+	font-size: 3em;
+	margin: 0%;
+}
+
+header h1 a {
+	color: #fff;
+}
+
+header p {
+	margin: 2%;
+	color: #d9d9d9;
+	line-height: 1.3;
+	letter-spacing: 0.2px;
+}
+
+
+
+
+
+
+/*************************
+		 BODY 
+*************************/
+
+form[name="logOutForm"] input {
+	font-family: 'Droid Serif', serif;
+	text-align: center;
+	color: #bfbfbf;
+	background: #999999;
+	width: 25%;
+	padding: 2.5% 5%;
+	margin: 1% 37.5% -0.5%;
+	border-radius: 2px;
+	font-size: 0.9em;
+	color: white;
+	transition: all 0.2s;
+	border: none;
+	cursor: pointer;
+}
+
+form[name="logOutForm"] input:hover {
+	background: #a6a6a6;
+}
+
+form[name="login"],
+form[name="pin"],
+form[name="registration"],
+form[name="credentials"],
+form[name="secretCode"],
+.index_01,
+.index_02,
+form[name="addCard"],
+form[name="purchase"] {
+	background: #f2f2f2;
+	padding: 5%;
+	margin: 5%;
+	border-radius: 3px;
+}
+
+/*** Login ***/
+form[name="login"] > p {
+	text-align: center;
+	margin: 3% 5% 5%;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+form[name="login"] > p:first-of-type {
+	color: #e60000;
+	margin: 2% 3%;
+	font-size: 0.95em;
+}
+
+input[name="usernameLogin"],
+input[name="passwordLogin"],
+input[name="submitLogin"] {
+	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
+	width: 88%;
+	margin: 2.5% 3%;
+	padding: 4% 3%;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+
+input[name="usernameLogin"]:focus,
+input[name="passwordLogin"]:focus {
+	outline-color:  #0a415c;
+}
+
+form[name="login"] fieldset {
+	width: 25%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+form[name="login"] label {
+	font-size: 0.85em;
+	display: block;
+	text-align: center;
+}
+
+form[name="login"] select {
+	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	width: 85%;
+	padding: 10% 4%;
+	margin: 10% 7.5%;
+}
+
+
+form[name="login"] select:focus {
+	outline-color: #0d5173;
+}
+
+input[name="submitLogin"] {
+	background: #0d5173;
+	font-size: 0.92em;
+	width: 84%;
+	margin: 5% 8% 2%;
+	padding: 4% 0;
+	border-radius: 3px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s;
+	border-bottom: 4px solid #083045;
+}
+
+
+input[name="submitLogin"]:hover {
+	background: #0f618a;
+}
+
+input[name="submitLogin"]:focus {
+	outline: none;
+}
+
+form[name="login"] > p {
+	text-align: center;
+	margin: 3% 5% 5%;
+	font-size: 0.85em;
+}
+
+form[name="login"] > a {
+	text-align: center;
+	font-size: 0.95em;
+	display: block;
+	margin: 2.5% 12.5%;
+	padding: 3%;
+	border: 2px solid lightgrey;
+	border-radius: 2px;
+	color: #404040;
+	transition: all 0.5s;
+}
+
+form[name="login"] > a:hover {
+	border: 2px solid #0a415c;
+	color: #1a1a1a;
+}
+
+
+
+/*** Registration ***/
+form[name="registration"] > p {
+	color: #e60000;
+	margin: 2% 3%;
+	font-size: 0.95em;
+	text-align: center;
+}
+
+form[name="registration"] fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+form[name="registration"] fieldset > p:first-of-type {
+	text-align: center;
+	margin: 6% 4% 2%;
+	font-size: 0.95em;
+	color: #404040;
+	letter-spacing: 0.1px;
+}
+
+form[name="registration"] fieldset:first-of-type > p {
+	margin-top: 2%;
+}
+
+form[name="registration"] fieldset input[name="submitRegistration"] + p {
+	text-align: center;
+	margin: 3% 5% 5%;
+	font-size: 0.85em;
+}
+
+input[name="fullname"],
+input[name="address"],
+input[name="postcode"],
+input[name="email"],
+input[name="phone"],
+input[name="registrationUsername"],
+input[name="registrationPassword01"],
+input[name="registrationPassword02"],
+input[name="submitRegistration"],
+input[name="secretCode01"],
+input[name="secretCode02"] {
+	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
+	width: 88%;
+	margin: 2.5% 3%;
+	padding: 4% 3%;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+
+input[name="fullname"]:focus,
+input[name="address"]:focus,
+input[name="postcode"]:focus,
+input[name="email"]:focus,
+input[name="phone"]:focus,
+input[name="registrationUsername"]:focus,
+input[name="registrationPassword01"]:focus,
+input[name="registrationPassword02"]:focus,
+input[name="secretCode01"],
+input[name="secretCode02"] {
+	outline-color: #0a415c;
+}
+
+
+input[name="submitRegistration"] {
+	background: #0d5173;
+	font-size: 0.92em;
+	width: 94%;
+	margin: 5% 3% 2.5%;
+	padding: 4% 0;
+	border-radius: 3px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s;
+	border-bottom: 4px solid #083045;
+}
+
+
+input[name="submitRegistration"]:hover {
+	background: #0f618a;
+}
+
+input[name="submitRegistration"]:focus {
+	outline: none;
+}
+
+form[name="registration"] fieldset > a {
+	text-align: center;
+	font-size: 0.95em;
+	display: block;
+	margin: 2.5% 12.5%;
+	padding: 3%;
+	border: 2px solid lightgrey;
+	border-radius: 2px;
+	color: #404040;
+	transition: all 0.5s;
+}
+
+form[name="registration"] fieldset > a:hover {
+	border: 2px solid #0a415c;
+	color: #1a1a1a;
+}
+
+
+
+
+
+/*** Index ***/
+.index_01 > p {
+	text-align: center;
+}
+
+.index_01 > p:first-of-type {
+	font-size: 1em;
+	margin: 2% 0;
+}
+
+.index_01 > p:first-of-type + p {
+	font-size: 3em;
+	margin: 0 0;
+}
+
+
+.index_01 > a {
+	background: #0d5173;
+	display: block;
+	font-size: 0.92em;
+	width: 40%;
+	margin: 3% 30% 1.5%;
+	padding: 4% 0;
+	border-radius: 3px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s;
+	border-bottom: 4px solid #083045;
+	text-align: center;
+}
+
+.index_01 > a:hover {
+	background: #0f618a;
+}
+
+
+
+.index_02 {
+	margin: 0;
+	padding: 0% 5%;
+}
+
+.index_02 > ul {
+	padding: 2.5% 0 2%;
+}
+
+.index_02 p {
+	font-size: 1em;
+	margin: 2% 0;
+	text-align: center;
+}
+
+
+.index_02 ul li ul li {
+	float: left;
+	width: 33.3333333333%;
+	text-align: center;
+	line-height: 3.5;
+	border-top: 1px solid #bfbfbf;
+	font-size: 0.95em;
+	letter-spacing: 0.3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
+}
+
+
+.index_02 ul > li:first-of-type ul li {
+	text-align: center;
+	border-top: none;
+	line-height: 2.5;
+	font-size: 1em;
+	color: #0d5173;
+}
+
+
+/*** Purchase ***/
+input[name="amount"],
+input[name="amount"] + p {
+	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
+	float: left;
+	width: 39.25%;
+	padding: 4% 3%;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+
+form[name="purchase"] > p:first-of-type {
+	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
+	border: none;
+	border-radius: none;
+	display: block;
+	float: none;
+	text-align: center;
+	padding: 0;
+	margin: 2.5%;
+}
+
+
+.buyingMessage {
+	color: #333333;
+}
+
+
+.buyingError {
+	color: red;
+}
+
+
+input[name="amount"] {
+	margin: 2.5% 1% 2.5% 3%;
+}
+
+input[name="amount"]:focus {
+	outline-color:  #0a415c;
+}
+
+form[name="purchase"] > p {
+	margin: 2.5% 3% 2.5% 1%;
+}
+
+form[name="purchase"] > fieldset {
+	border: 0;
+	margin: 0% 2.5% 0%;
+	padding: 2% 0 1%;
+}
+
+form[name="purchase"] > fieldset fieldset {
+	padding: 4% 0;
+	border: none;
+	border-top: 1px solid lightgrey;
+}
+
+form[name="purchase"] > fieldset fieldset:first-of-type {
+	border-top: none;
+}
+
+form[name="purchase"] > fieldset fieldset input {
+	transform: translateY(-8%);
+	width: 5%;
+}
+
+form[name="purchase"] > fieldset fieldset label {
+	font-size: 0.9em;
+	color: #404040;
+	display: inline-block;
+	width: 90%;
+	float: right;
+}
+
+form[name="purchase"] > fieldset fieldset label span:first-of-type {
+	float: left;
+	width: 80%;
+}
+
+form[name="purchase"] > fieldset fieldset label span:first-of-type + span {
+	float: right;
+	width: 20%;
+	text-align: right;
+}
+
+input[name="submitPurchase"] {
+	font-family: 'Droid Serif', serif;
+	background: #0d5173;
+	font-size: 0.92em;
+	width: 92%;
+	margin: 2.5% 4%;
+	padding: 4% 0;
+	border-radius: 3px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s;
+	border-bottom: 4px solid #083045;
+}
+
+input[name="submitPurchase"]:focus {
+	outline: none;
+}
+
+
+input[name="submitPurchase"]:hover {
+	background: #0f618a;
+}
+
+
+
+/*** Add Card ***/
+form[name="addCard"] > p:first-of-type {
+	margin-top: 2.5%;
+}
+
+form[name="addCard"] > p {
+	color: #4d4d4d;
+	margin: 8% 2.5% 2.5% 3%;
+	font-size: 0.95em;
+}
+
+form[name="addCard"] .addCardError,
+form[name="addCard"] .addCardConfirmed {
+	margin: 0% 3% -2% 3%;
+	font-size: 0.95em;
+}
+
+form[name="addCard"] .addCardError {
+	color: #e60000;
+}
+
+form[name="addCard"] .addCardConfirmed {
+	color: #262626;
+}
+
+
+form[name="addCard"] > select {
+	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	width: 94.5%;
+	padding: 2.5%;
+	margin: 2.5% 2.5% 2.5% 3%;
+	color: #595959;
+}
+
+
+input[name="nameOnCard"],
+input[name="cardNo"],
+input[name="securityCode"],
+form[name="addCard"] fieldset,
+input[name="submitCard"],
+input[name="paymentAddress"],
+input[name="paymentPostCode"] {
+	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
+	width: 88%;
+	margin: 2.5% 3%;
+	padding: 4% 3%;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+
+input[name="nameOnCard"]:focus,
+input[name="cardNo"]:focus,
+input[name="securityCode"]:focus,
+input[name="paymentAddress"]:focus,
+input[name="paymentPostCode"]:focus,
+form[name="addCard"] select:focus {
+	outline-color:  #0a415c;
+}
+
+form[name="addCard"] fieldset {
+	background: #fff;
+}
+
+form[name="addCard"] fieldset label {
+	font-family: 'Droid Serif', serif;
+	font-size: 1em;
+	display: inline-block;
+	width: 40%;
+	color: #737373;
+}
+
+form[name="addCard"] fieldset select {
+	font-family: 'Droid Serif', serif;
+	font-size: 1em;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+	width: 28.2%;
+	margin: 0;
+	padding: 0;
+}
+
+input[name="submitCard"] {
+	background: #0d5173;
+	font-size: 0.92em;
+	width: 35%;
+	margin: 2.5% 3%;
+	padding: 3% 0;
+	border-radius: 3px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s;
+	border-bottom: 4px solid #083045;
+}
+
+
+input[name="submitCard"]:hover {
+	background: #0f618a;
+}
+
+
+/*************************
+		FOOTER 
+*************************/
+footer {
+	text-align: center;
+}
+
+footer p {
+	text-align: center;
+	line-height: 1.3;
+	letter-spacing: 0.2px;
+	color: #d9d9d9;
+}
+
+
+
+
+
+
+
+
+
+/*********************************
+Clearfix
+The code below has been taken from: http://nicolasgallagher.com/micro-clearfix-hack
+The code will give floated elements their full height
+*********************************/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+/*RESPONSIVE DESIGN */
+
+/*************************
+		HEADER 
+*************************/
+@media screen and (min-width: 760px) {
+	header p {
+		margin: 0.5% 35%;
+	}
+}
+
+
+/*************************
+		SECTION 
+*************************/
+@media screen and (min-width: 760px) {
+	form[name="logOutForm"] input {
+		width: 8%;
+		padding: 1% 1%;
+		margin: 0.5% 46%;
+		border-radius: 3px;
+	}
+
+	form[name="login"],
+	form[name="pin"],
+	form[name="registration"],
+	form[name="credentials"],
+	form[name="secretCode"],
+	.index_01,
+	.index_02,
+	form[name="addCard"],
+	form[name="purchase"] {
+		padding: 1.5% 2.5%;
+		margin: 1.25% 35%;
+		width: 25%;
+		border-radius: 3px;
+	}
+
+
+	/*** Login ***/
+	form[name="login"] fieldset {
+		width: 22%;
+		float: left;
+		padding: 0;
+		margin: 0 1.5%;
+		border: none;
+	}
+
+}
+
+
+/*************************
+		FOOTER 
+*************************/
+footer p {
+	text-align: center;
+	line-height: 1.5;
+	font-size: 0.95em;
+	margin: 0;
+}
